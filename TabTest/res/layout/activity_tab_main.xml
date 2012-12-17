@@ -1,0 +1,104 @@
+<TabHost
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" >
+        <TabWidget 
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content" />
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+    		android:layout_height="fill_parent" >
+    		
+            <LinearLayout 
+    		    android:id="@+id/first"
+    		    android:orientation="vertical"
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="wrap_content"
+    		    android:gravity="right" >
+    		    <TextView 
+    		        android:layout_width="match_parent"
+    		        android:layout_height="wrap_content"
+    		        android:text="店名"/>
+    		    <EditText
+    		        android:layout_width="fill_parent"
+    		        android:layout_height="wrap_content" />
+    		    <TextView 
+    		        android:layout_width="match_parent"
+    		        android:layout_height="wrap_content"
+    		        android:text="住所"/>
+    		    <EditText
+    		        android:layout_width="fill_parent"
+    		        android:layout_height="wrap_content" />
+    		    <Button
+    		        android:layout_width="wrap_content"
+    		        android:layout_height="wrap_content"
+    		        android:text="@string/input"	/>
+    		</LinearLayout>
+            
+    		<LinearLayout 
+    		    android:id="@+id/second"
+    		    android:orientation="vertical"
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="wrap_content"
+    		    android:gravity="right" >
+    		    <TextView 
+    		        android:layout_width="match_parent"
+    		        android:layout_height="wrap_content"
+    		        android:text="メモ"/>
+    		    <EditText
+    		        android:layout_width="fill_parent"
+    		        android:layout_height="wrap_content" />
+    		    <Button
+    		        android:layout_width="wrap_content"
+    		        android:layout_height="wrap_content"
+    		        android:text="@string/input"	/>
+    		</LinearLayout>
+    		
+    		<LinearLayout 
+    		    android:id="@+id/third"
+    		    android:orientation="vertical"
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="wrap_content"
+    		    android:gravity="right" >
+    		    <TextView 
+    		        android:layout_width="match_parent"
+    		        android:layout_height="wrap_content"
+    		        android:text="メモ1"/>
+    		    <EditText
+    		        android:layout_width="fill_parent"
+    		        android:layout_height="wrap_content" />
+    		    <Button
+    		        android:layout_width="wrap_content"
+    		        android:layout_height="wrap_content"
+    		        android:text="@string/input"	/>
+    		</LinearLayout>
+    		
+    		<LinearLayout 
+    		    android:id="@+id/fourth"
+    		    android:orientation="vertical"
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="wrap_content"
+    		    android:gravity="right" >
+    		    <TextView 
+    		        android:layout_width="match_parent"
+    		        android:layout_height="wrap_content"
+    		        android:text="タグ"/>
+    		    <EditText
+    		        android:layout_width="fill_parent"
+    		        android:layout_height="wrap_content" />
+    		    <Button
+    		        android:layout_width="wrap_content"
+    		        android:layout_height="wrap_content"
+    		        android:text="@string/input"	/>
+    		</LinearLayout>
+        
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>
