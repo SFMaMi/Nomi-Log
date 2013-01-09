@@ -1,9 +1,9 @@
-package com.example.tabtest;
+package com.example.tabtest.db;
 
 import java.io.Serializable;
 
 
-
+@SuppressWarnings("serial")
 public class NLog implements Serializable{
 	//テーブル名
 	public static final String TABLE_NAME = "NLog";
