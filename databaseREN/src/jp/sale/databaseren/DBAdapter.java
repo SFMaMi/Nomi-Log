@@ -10,10 +10,10 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DBAdapter {
 
-  static final String DATABASE_NAME = "mynote.db";
+  static final String DATABASE_NAME = "DBNL.db";
   static final int DATABASE_VERSION = 1;
   
-  public static final String TABLE_NAME = "notes";
+  public static final String TABLE_NAME = "DBNL";
   public static final String COL_ID = "_id";
   public static final String COL_NOTE = "note";
   public static final String COL_LASTUPDATE = "lastupdate";
