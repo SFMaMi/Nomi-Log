@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+ 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+ 
+        <!-- タブ -->
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        
+ 
+        <!-- セパレータ -->
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp" />
+ 
+        <!-- タブの内容 -->
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+            
+            <LinearLayout 
+    		    android:id="@+id/first"
+    		    android:orientation="vertical"
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="wrap_content"
+    		    android:gravity="right" >
+    		    <TextView 
+    		        android:layout_width="match_parent"
+    		        android:layout_height="wrap_content"
+    		        android:text="@string/Shop" />
+    		    <EditText
+    		        android:layout_width="fill_parent"
+    		        android:layout_height="wrap_content" 
+    		        android:id="@+id/Shop"/>
+    		    <TextView 
+    		        android:layout_width="match_parent"
+    		        android:layout_height="wrap_content"
+    		        android:text="@string/Zipcode"/>
+    		    <EditText
+    		        android:layout_width="fill_parent"
+    		        android:layout_height="wrap_content" 
+    		        android:id="@+id/Zipcode"/>
+    		    <TextView 
+    		        android:layout_width="match_parent"
+    		        android:layout_height="wrap_content"
+    		        android:text="@string/Address"/>
+    		    <EditText
+    		        android:layout_width="fill_parent"
+    		        android:layout_height="wrap_content" 
+    		        android:id="@+id/Address"/>
+    		    <TextView 
+    		        android:layout_width="match_parent"
+    		        android:layout_height="wrap_content"
+    		        android:text="@string/Tel" />
+    		    <EditText
+    		        android:layout_width="fill_parent"
+    		        android:layout_height="wrap_content" 
+    		        android:id="@+id/Tel"/>
+    		    <Button
+    		        android:layout_width="wrap_content"
+    		        android:layout_height="wrap_content"
+    		        android:text="@string/Save"
+    		        	/>
+    		</LinearLayout>
+            
+    		<LinearLayout 
+    		    android:id="@+id/second"
+    		    android:orientation="vertical"
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="wrap_content"
+    		    android:gravity="right" >
+    		    <TextView 
+    		        android:layout_width="match_parent"
+    		        android:layout_height="wrap_content"
+    		        android:text="@string/Evalution"/>
+    		    <EditText
+    		        android:layout_width="fill_parent"
+    		        android:layout_height="wrap_content" 
+    		        android:id="@+id/Evalution"/>
+    		    <Button
+    		        android:layout_width="wrap_content"
+    		        android:layout_height="wrap_content"
+    		        android:text="@string/Save"
+    		        	/>
+    		</LinearLayout>
+    		
+    		<LinearLayout 
+    		    android:id="@+id/third"
+    		    android:orientation="vertical"
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="wrap_content"
+    		    android:gravity="right" >
+    		    <TextView 
+    		        android:layout_width="match_parent"
+    		        android:layout_height="wrap_content"
+    		        android:text="@string/Memo"/>
+    		    <EditText
+    		        android:layout_width="fill_parent"
+    		        android:layout_height="wrap_content" 
+    		        android:id="@+id/Memo"/>
+    		    <Button
+    		        android:layout_width="wrap_content"
+    		        android:layout_height="wrap_content"
+    		        android:text="@string/Save"
+    		        	/>
+    		</LinearLayout>
+    		
+    		<LinearLayout 
+    		    android:id="@+id/fourth"
+    		    android:orientation="vertical"
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="wrap_content"
+    		    android:gravity="right" >
+    		    <TextView 
+    		        android:layout_width="match_parent"
+    		        android:layout_height="wrap_content"
+    		        android:text="@string/Tag"/>
+    		    <EditText
+    		        android:layout_width="fill_parent"
+    		        android:layout_height="wrap_content" 
+    		        android:id="@+id/Tag"/>
+    		    <Button
+    		        android:layout_width="wrap_content"
+    		        android:layout_height="wrap_content"
+    		        android:text="@string/Save"
+    		        />
+    		</LinearLayout>
+    	</FrameLayout>
+    </LinearLayout>
+</TabHost>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">databaseREN</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="Shop">店名</string>
+    <string name="Zipcode">郵便番号</string>
+    <string name="Address">住所</string>
+    <string name="Tel">電話番号</string>
+    <string name="Evalution">評価</string>
+    <string name="Memo">メモ</string>
+    <string name="Tag">タグ</string>
+    <string name="Save">登録</string>
+
+</resources>
