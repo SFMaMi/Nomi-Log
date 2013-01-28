@@ -16,6 +16,13 @@ public class DBAdapter {
   public static final String TABLE_NAME = "DBNL";
   public static final String COL_ID = "_id";
   public static final String COL_NOTE = "note";
+  public static final String COL_SHOP = "shop";
+  public static final String COL_ZIPCODE = "zipcode";
+  public static final String COL_ADDRESS = "address";
+  public static final String COL_TEL = "tel";
+  public static final String COL_EVALUATION = "evaluation";
+  public static final String COL_MEMO = "memo";
+  public static final String COL_TAG = "tag";
   public static final String COL_LASTUPDATE = "lastupdate";
 
   protected final Context context;
@@ -43,6 +50,13 @@ public class DBAdapter {
         "CREATE TABLE " + TABLE_NAME + " ("
         + COL_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
         + COL_NOTE + " TEXT NOT NULL,"
+        + COL_SHOP + " TEXT NOT NULL,"
+	    + COL_ZIPCODE + " TEXT NOT NULL,"
+	    + COL_ADDRESS + " TEXT NOT NULL,"
+	    + COL_TEL + " TEXT NOT NULL,"
+	    + COL_EVALUATION + " TEXT NOT NULL,"
+	    + COL_MEMO + " TEXT NOT NULL,"
+	    + COL_TAG + " TEXT NOT NULL,"
         + COL_LASTUPDATE + " TEXT NOT NULL);");
     }
 
@@ -96,4 +110,39 @@ public class DBAdapter {
     values.put(COL_LASTUPDATE, dateNow.toLocaleString());
     db.insertOrThrow(TABLE_NAME, null, values);
   }
+  
+  public void saveINFO(String shop, String zipcode, String address, String tel){
+	    Date dateNow = new Date ();
+	    ContentValues values = new ContentValues();
+	    values.put(COL_SHOP, shop);
+	    values.put(COL_ZIPCODE, zipcode);
+	    values.put(COL_ADDRESS, address);
+	    values.put(COL_TEL, tel);
+	    values.put(COL_LASTUPDATE, dateNow.toLocaleString());
+	    db.insertOrThrow(TABLE_NAME, null, values);
+	  }
+	  
+	  public void saveEVA(String eva){
+		  Date dateNow = new Date ();
+		  ContentValues values = new ContentValues();
+		  values.put(COL_EVALUATION, eva);
+		  values.put(COL_LASTUPDATE, dateNow.toLocaleString());
+		  db.insertOrThrow(TABLE_NAME, null, values);
+	  }
+	  
+	  public void saveMEMO(String memo){
+		  Date dateNow = new Date ();
+		  ContentValues values = new ContentValues();
+		  values.put(COL_MEMO, memo);
+		  values.put(COL_LASTUPDATE, dateNow.toLocaleString());
+		  db.insertOrThrow(TABLE_NAME, null, values);
+	  }
+	  
+	  public void saveTAG(String tag){
+		  Date dateNow = new Date ();
+		  ContentValues values = new ContentValues();
+		  values.put(COL_TAG, tag);
+		  values.put(COL_LASTUPDATE, dateNow.toLocaleString());
+		  db.insertOrThrow(TABLE_NAME, null, values);
+	  }
 }

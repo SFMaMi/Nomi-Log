@@ -1,8 +1,5 @@
 package jp.sale.databaseren;
 
-import java.util.Date;
-
-import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -42,6 +39,7 @@ public class DBAdapterNL {
 	      super(context, DATABASE_NAME, null, DATABASE_VERSION);
 	    }
 
+	    
 	    @Override
 	    public void onCreate(SQLiteDatabase db) {
 	      db.execSQL(
@@ -56,6 +54,7 @@ public class DBAdapterNL {
 	        + COL_TAG + " TEXT NOT NULL,"
 	        + COL_LASTUPDATE + " TEXT NOT NULL);");
 	    }
+	    
 
 	    @Override
 	    public void onUpgrade(
@@ -99,7 +98,7 @@ public class DBAdapterNL {
 	  public Cursor getAllNotes(){
 	    return db.query(TABLE_NAME, null, null, null, null, null, null);
 	  }
-	  
+	  /*
 	  public void saveINFO(String shop, String zipcode, String address, String tel){
 	    Date dateNow = new Date ();
 	    ContentValues values = new ContentValues();
@@ -134,4 +133,5 @@ public class DBAdapterNL {
 		  values.put(COL_LASTUPDATE, dateNow.toLocaleString());
 		  db.insertOrThrow(TABLE_NAME, null, values);
 	  }
+	  */
 }
